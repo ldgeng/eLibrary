@@ -63,7 +63,7 @@ jobs:
           cmake --build build --config ${{ matrix.config.build_type }}
 
       - name: Codecov Uploading
-        uses: codecov/codecov-action@v4
+        uses: codecov/codecov-action@v5
         env:
           file: coverage.info
           token: ${{secrets.CODECOV_TOKEN}}
